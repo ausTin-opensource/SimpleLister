@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16A9851B1936EEA5007B7F37"
+               BlueprintIdentifier = "16EB5ECA1936D39400532A4B"
                BuildableName = "Lister.appex"
                BlueprintName = "Lister Today"
                ReferencedContainer = "container:Lister.xcodeproj">
@@ -29,7 +29,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16CBDAA618F6EE3A00233D3C"
+               BlueprintIdentifier = "163275F918AD468F00A97A9F"
                BuildableName = "Lister.app"
                BlueprintName = "Lister"
                ReferencedContainer = "container:Lister.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16A9851B1936EEA5007B7F37"
+            BlueprintIdentifier = "16EB5ECA1936D39400532A4B"
             BuildableName = "Lister.appex"
             BlueprintName = "Lister Today"
             ReferencedContainer = "container:Lister.xcodeproj">
@@ -71,7 +71,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16CBDAA618F6EE3A00233D3C"
+            BlueprintIdentifier = "163275F918AD468F00A97A9F"
             BuildableName = "Lister.app"
             BlueprintName = "Lister"
             ReferencedContainer = "container:Lister.xcodeproj">
@@ -91,7 +91,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16CBDAA618F6EE3A00233D3C"
+            BlueprintIdentifier = "163275F918AD468F00A97A9F"
             BuildableName = "Lister.app"
             BlueprintName = "Lister"
             ReferencedContainer = "container:Lister.xcodeproj">

@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E93585D1920343C0091408E"
+               BlueprintIdentifier = "1633C7301939337F00A9CC5E"
                BuildableName = "Lister.appex"
                BlueprintName = "Lister Today (OS X)"
                ReferencedContainer = "container:Lister.xcodeproj">
@@ -29,7 +29,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E497FC518FAFA2400B32837"
+               BlueprintIdentifier = "163A6C9F1906ED4C008E1930"
                BuildableName = "Lister.app"
                BlueprintName = "Lister (OS X)"
                ReferencedContainer = "container:Lister.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E93585D1920343C0091408E"
+            BlueprintIdentifier = "1633C7301939337F00A9CC5E"
             BuildableName = "Lister.appex"
             BlueprintName = "Lister Today (OS X)"
             ReferencedContainer = "container:Lister.xcodeproj">
@@ -71,7 +71,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E497FC518FAFA2400B32837"
+            BlueprintIdentifier = "163A6C9F1906ED4C008E1930"
             BuildableName = "Lister.app"
             BlueprintName = "Lister (OS X)"
             ReferencedContainer = "container:Lister.xcodeproj">
@@ -91,7 +91,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E497FC518FAFA2400B32837"
+            BlueprintIdentifier = "163A6C9F1906ED4C008E1930"
             BuildableName = "Lister.app"
             BlueprintName = "Lister (OS X)"
             ReferencedContainer = "container:Lister.xcodeproj">

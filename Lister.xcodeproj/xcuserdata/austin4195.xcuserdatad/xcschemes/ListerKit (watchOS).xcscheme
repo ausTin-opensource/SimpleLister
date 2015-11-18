@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16CD560B1B127DDC00DB4F4F"
+               BlueprintIdentifier = "164346B41B0FE72200F81674"
                BuildableName = "ListerWatchKit.framework"
                BlueprintName = "ListerKit (watchOS)"
                ReferencedContainer = "container:Lister.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16CD560B1B127DDC00DB4F4F"
+            BlueprintIdentifier = "164346B41B0FE72200F81674"
             BuildableName = "ListerWatchKit.framework"
             BlueprintName = "ListerKit (watchOS)"
             ReferencedContainer = "container:Lister.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16CD560B1B127DDC00DB4F4F"
+            BlueprintIdentifier = "164346B41B0FE72200F81674"
             BuildableName = "ListerWatchKit.framework"
             BlueprintName = "ListerKit (watchOS)"
             ReferencedContainer = "container:Lister.xcodeproj">

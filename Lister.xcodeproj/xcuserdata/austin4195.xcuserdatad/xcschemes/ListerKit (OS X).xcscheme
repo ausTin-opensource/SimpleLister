@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E93587C1920355C0091408E"
+               BlueprintIdentifier = "3E745ECA190880F30090B20E"
                BuildableName = "ListerKit.framework"
                BlueprintName = "ListerKit (OS X)"
                ReferencedContainer = "container:Lister.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E251766197F7A1400B8AF96"
+               BlueprintIdentifier = "3E95066F198575570030A9D1"
                BuildableName = "ListerKit Tests (OS X).xctest"
                BlueprintName = "ListerKit Tests (OS X)"
                ReferencedContainer = "container:Lister.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E93587C1920355C0091408E"
+            BlueprintIdentifier = "3E745ECA190880F30090B20E"
             BuildableName = "ListerKit.framework"
             BlueprintName = "ListerKit (OS X)"
             ReferencedContainer = "container:Lister.xcodeproj">
@@ -64,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E93587C1920355C0091408E"
+            BlueprintIdentifier = "3E745ECA190880F30090B20E"
             BuildableName = "ListerKit.framework"
             BlueprintName = "ListerKit (OS X)"
             ReferencedContainer = "container:Lister.xcodeproj">
@@ -82,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E93587C1920355C0091408E"
+            BlueprintIdentifier = "3E745ECA190880F30090B20E"
             BuildableName = "ListerKit.framework"
             BlueprintName = "ListerKit (OS X)"
             ReferencedContainer = "container:Lister.xcodeproj">

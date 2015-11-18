@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16EE5953192016410052916A"
+               BlueprintIdentifier = "1632761D18AD468F00A97A9F"
                BuildableName = "ListerKit.framework"
                BlueprintName = "ListerKit"
                ReferencedContainer = "container:Lister.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16EE5953192016410052916A"
+            BlueprintIdentifier = "1632761D18AD468F00A97A9F"
             BuildableName = "ListerKit.framework"
             BlueprintName = "ListerKit"
             ReferencedContainer = "container:Lister.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16EE5953192016410052916A"
+            BlueprintIdentifier = "1632761D18AD468F00A97A9F"
             BuildableName = "ListerKit.framework"
             BlueprintName = "ListerKit"
             ReferencedContainer = "container:Lister.xcodeproj">
