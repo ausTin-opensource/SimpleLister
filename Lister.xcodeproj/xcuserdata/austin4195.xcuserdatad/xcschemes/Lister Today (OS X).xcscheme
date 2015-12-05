@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1633C7301939337F00A9CC5E"
-               BuildableName = "Lister.appex"
+               BuildableName = "SimpleLister.appex"
                BlueprintName = "Lister Today (OS X)"
                ReferencedContainer = "container:Lister.xcodeproj">
             </BuildableReference>
@@ -30,7 +30,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "163A6C9F1906ED4C008E1930"
-               BuildableName = "Lister.app"
+               BuildableName = "SimpleLister.app"
                BlueprintName = "Lister (OS X)"
                ReferencedContainer = "container:Lister.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1633C7301939337F00A9CC5E"
-            BuildableName = "Lister.appex"
+            BuildableName = "SimpleLister.appex"
             BlueprintName = "Lister Today (OS X)"
             ReferencedContainer = "container:Lister.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "163A6C9F1906ED4C008E1930"
-            BuildableName = "Lister.app"
+            BuildableName = "SimpleLister.app"
             BlueprintName = "Lister (OS X)"
             ReferencedContainer = "container:Lister.xcodeproj">
          </BuildableReference>
@@ -92,7 +92,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "163A6C9F1906ED4C008E1930"
-            BuildableName = "Lister.app"
+            BuildableName = "SimpleLister.app"
             BlueprintName = "Lister (OS X)"
             ReferencedContainer = "container:Lister.xcodeproj">
          </BuildableReference>
