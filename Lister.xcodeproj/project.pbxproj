@@ -329,6 +329,7 @@
 		3EED111819AFC35C00848265 /* AAPLTodayWidgetRequiresCloudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EED111119AFC30800848265 /* AAPLTodayWidgetRequiresCloudViewController.m */; };
 		3EED111919AFC55200848265 /* AAPLTodayWidgetRequiresCloudViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EED111219AFC30800848265 /* AAPLTodayWidgetRequiresCloudViewController.xib */; };
 		3EFDBA0D198D435800DBDB93 /* NSColor+AppSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE02D0198CA78D0007E4AC /* NSColor+AppSpecific.m */; };
+		DB3BE2CB1C212198000CF38E /* SimpleLister.appex in Resources */ = {isa = PBXBuildFile; fileRef = 1633C7311939337F00A9CC5E /* SimpleLister.appex */; };
 		DB98EC771BFEED5E007A6877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98EC791BFEED5E007A6877 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -465,6 +466,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3E745ECA190880F30090B20E;
 			remoteInfo = ListerKitOSX;
+		};
+		DB3BE2CC1C2121A6000CF38E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 163275F218AD468F00A97A9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 163A6C9F1906ED4C008E1930;
+			remoteInfo = "Lister (OS X)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2281,6 +2289,7 @@
 			);
 			dependencies = (
 				55C783461A19C782006B0C19 /* PBXTargetDependency */,
+				DB3BE2CD1C2121A6000CF38E /* PBXTargetDependency */,
 			);
 			name = "ListerKit Tests (OS X)";
 			productName = ListerKitTestsOSX;
@@ -2364,6 +2373,7 @@
 					};
 					3E95066F198575570030A9D1 = {
 						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 163A6C9F1906ED4C008E1930;
 					};
 				};
 			};
@@ -2447,6 +2457,7 @@
 			files = (
 				168AF80B191AA89700D6BA5A /* ListerOSX.entitlements in Resources */,
 				DB98EC771BFEED5E007A6877 /* Main.storyboard in Resources */,
+				DB3BE2CB1C212198000CF38E /* SimpleLister.appex in Resources */,
 				3EBE029B198CA5280007E4AC /* ListerDocumentIcon.icns in Resources */,
 				163A6CAE1906ED4C008E1930 /* Images.xcassets in Resources */,
 			);
@@ -2927,6 +2938,11 @@
 			isa = PBXTargetDependency;
 			target = 3E745ECA190880F30090B20E /* ListerKit (OS X) */;
 			targetProxy = 55C783451A19C782006B0C19 /* PBXContainerItemProxy */;
+		};
+		DB3BE2CD1C2121A6000CF38E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 163A6C9F1906ED4C008E1930 /* Lister (OS X) */;
+			targetProxy = DB3BE2CC1C2121A6000CF38E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3693,6 +3709,7 @@
 		3E950677198575570030A9D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -3708,12 +3725,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "${LISTER_BUNDLE_PREFIX}.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleLister.app/Contents/MacOS/SimpleLister";
 			};
 			name = Debug;
 		};
 		3E950678198575570030A9D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -3726,6 +3745,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "${LISTER_BUNDLE_PREFIX}.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleLister.app/Contents/MacOS/SimpleLister";
 			};
 			name = Release;
 		};
