@@ -10,6 +10,7 @@
 #import "AAPLListDocumentsViewController.h"
 #import "AAPLListViewController.h"
 #import "AAPLAppLaunchContext.h"
+#import <Parse/Parse.h>
 @import ListerKit;
 
 // The main storyboard name.
@@ -91,6 +92,16 @@ NSString *const AAPLAppDelegateMainStoryboardListDocumentsViewControllerContinue
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Observe changes to the user's iCloud account status (account changed, logged out, etc...).
     [[NSNotificationCenter defaultCenter] addObserver: self selector:@selector(handleUbiquityIdentityDidChangeNotification:) name:NSUbiquityIdentityDidChangeNotification object: nil];
+    [Parse setApplicationId:@"Sq57ZunSVOaYKHh1piAEcclN2jOTWviwaFKsAWnM"
+                  clientKey:@"FtH9iwrLUeHoyKf3s8KfSuzR7XlQmQhihAq8PDny"];
+    // Register for Push Notitications
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                    UIUserNotificationTypeBadge |
+                                                    UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                                             categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
     
     // Provide default lists from the app's bundle on first launch.
     [[AAPLAppConfiguration sharedAppConfiguration] runHandlerOnFirstLaunch:^{
@@ -398,5 +409,39 @@ NSString *const AAPLAppDelegateMainStoryboardListDocumentsViewControllerContinue
         self.listsController.listCoordinator = [[AAPLAppConfiguration sharedAppConfiguration] listsCoordinatorForCurrentConfigurationWithPathExtension:AAPLAppConfigurationListerFileExtension firstQueryHandler:storageOptionChangeHandler];
     }
 }
+
+#pragma mark Push Notifications
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+    
+    [PFPush subscribeToChannelInBackground:@"" block:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"ParseStarterProject successfully subscribed to push notifications on the broadcast channel.");
+        } else {
+            NSLog(@"ParseStarterProject failed to subscribe to push notifications on the broadcast channel.");
+        }
+    }];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    if (error.code == 3010) {
+        NSLog(@"Push notifications are not supported in the iOS Simulator.");
+    } else {
+        // show some alert or otherwise handle the failure to register.
+        NSLog(@"application:didFailToRegisterForRemoteNotificationsWithError: %@", error);
+    }
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+    
+    if (application.applicationState == UIApplicationStateInactive) {
+        [PFAnalytics trackAppOpenedWithRemoteNotificationPayload:userInfo];
+    }
+}
+
 
 @end
