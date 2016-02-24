@@ -10,6 +10,8 @@
 #import "AAPLListDocumentsViewController.h"
 #import "AAPLListViewController.h"
 #import "AAPLAppLaunchContext.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 @import ListerKit;
 
 // The main storyboard name.
@@ -72,6 +74,8 @@ NSString *const AAPLAppDelegateMainStoryboardListDocumentsViewControllerContinue
 #pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Fabric with:@[[Crashlytics class]]];
+
     AAPLAppConfiguration *appConfiguration = [AAPLAppConfiguration sharedAppConfiguration];
     
     if (appConfiguration.isCloudAvailable) {

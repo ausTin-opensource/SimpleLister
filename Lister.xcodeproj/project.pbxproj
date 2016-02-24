@@ -330,6 +330,8 @@
 		3EED111819AFC35C00848265 /* AAPLTodayWidgetRequiresCloudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EED111119AFC30800848265 /* AAPLTodayWidgetRequiresCloudViewController.m */; };
 		3EED111919AFC55200848265 /* AAPLTodayWidgetRequiresCloudViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EED111219AFC30800848265 /* AAPLTodayWidgetRequiresCloudViewController.xib */; };
 		3EFDBA0D198D435800DBDB93 /* NSColor+AppSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE02D0198CA78D0007E4AC /* NSColor+AppSpecific.m */; };
+		DB5271221C7DF35D0037F85C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5271201C7DF35D0037F85C /* Fabric.framework */; };
+		DB5271231C7DF35E0037F85C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5271211C7DF35D0037F85C /* Crashlytics.framework */; };
 		DB98EC771BFEED5E007A6877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98EC791BFEED5E007A6877 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -868,6 +870,8 @@
 		3EED111119AFC30800848265 /* AAPLTodayWidgetRequiresCloudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLTodayWidgetRequiresCloudViewController.m; sourceTree = "<group>"; };
 		3EED111219AFC30800848265 /* AAPLTodayWidgetRequiresCloudViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AAPLTodayWidgetRequiresCloudViewController.xib; sourceTree = "<group>"; };
 		55BB61D61A13C84D001BE161 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DB5271201C7DF35D0037F85C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		DB5271211C7DF35D0037F85C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		DB98EC781BFEED5E007A6877 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB98EC7A1BFEED61007A6877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -885,6 +889,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1632762118AD468F00A97A9F /* ListerKit.framework in Frameworks */,
+				DB5271231C7DF35E0037F85C /* Crashlytics.framework in Frameworks */,
+				DB5271221C7DF35D0037F85C /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1611,6 +1617,8 @@
 		3E6F0E44198C85D6009A4CBB /* Lister iOS App */ = {
 			isa = PBXGroup;
 			children = (
+				DB5271201C7DF35D0037F85C /* Fabric.framework */,
+				DB5271211C7DF35D0037F85C /* Crashlytics.framework */,
 				163275FC18AD468F00A97A9F /* Main App */,
 				3EBE027C198C9D130007E4AC /* Today Widget */,
 				3EBE027E198C9D780007E4AC /* ListerKit Framework (iOS) */,
@@ -2051,6 +2059,7 @@
 				1632764118AD468F00A97A9F /* Embed Frameworks */,
 				16A1A28B1938266C00302EE4 /* Embed App Extensions */,
 				16502FB71B06877E00EB83DF /* Embed Watch Content */,
+				DB52711F1C7DF31A0037F85C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2649,6 +2658,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DB52711F1C7DF31A0037F85C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run fba8f9f626502cc43231470d36a152e4f2b4c741 94b77c90dc64ff75785484dc83abdc68f489ea19145c5db5e6a079edcc68106e";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1611C5F41A92A09100472891 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -3169,6 +3194,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lister/Lister-Prefix.pch";
@@ -3190,6 +3216,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lister/Lister-Prefix.pch";
