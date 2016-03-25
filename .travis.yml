@@ -1,1 +1,4 @@
 language: objective-c
+xcode_project: Lister.xcodeproj
+xcode_scheme: Lister
+xcode_scheme: Lister (OS X)
