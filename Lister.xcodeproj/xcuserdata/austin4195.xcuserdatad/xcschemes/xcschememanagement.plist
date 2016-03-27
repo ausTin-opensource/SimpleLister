@@ -4,57 +4,57 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Glance - Lister Watch App.xcscheme</key>
+		<key>Glance - Lister Watch App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
-		<key>Glance - Lister WatchKit App.xcscheme</key>
+		<key>Glance - Lister WatchKit App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>Lister (OS X).xcscheme</key>
+		<key>Lister (OS X).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
-		<key>Lister Today (OS X).xcscheme</key>
+		<key>Lister Today (OS X).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
-		<key>Lister Today.xcscheme</key>
+		<key>Lister Today.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Lister Watch App.xcscheme</key>
+		<key>Lister Watch App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>Lister WatchKit App.xcscheme</key>
+		<key>Lister WatchKit App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>Lister.xcscheme</key>
+		<key>Lister.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>ListerKit (OS X).xcscheme</key>
+		<key>ListerKit (OS X).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
-		<key>ListerKit (watchOS).xcscheme</key>
+		<key>ListerKit (watchOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
-		<key>ListerKit.xcscheme</key>
+		<key>ListerKit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
