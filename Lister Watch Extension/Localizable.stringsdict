@@ -8,18 +8,18 @@
 		<key>NSStringLocalizedFormatKey</key>
 		<string>%#@items@</string>
 		<key>items</key>
-        <dict>
-            <key>NSStringFormatSpecTypeKey</key>
-            <string>NSStringPluralRuleType</string>
-            <key>NSStringFormatValueTypeKey</key>
-            <string>d</string>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
             <key>zero</key>
             <string>Great job!</string>
-            <key>one</key>
-            <string>One left!</string>
+			<key>one</key>
+			<string>One left!</string>
             <key>other</key>
-            <string>%d items left</string>
-        </dict>
+			<string>%d items left</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
